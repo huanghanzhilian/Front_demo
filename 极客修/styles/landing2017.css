@@ -1,0 +1,498 @@
+body{
+	/* min-width: 100px; */
+}
+/* header */
+#header {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 60px;
+	line-height: 60px;
+	background: #000;
+	color: #fff;
+	z-index: 100;
+	min-width: 1000px;
+}
+:root #header {
+	background-color: rgba(0, 0, 0, .5);
+}
+#header .logo {
+	width: 103px;
+	text-indent: -9999px;
+	float: left;
+	height: 55px;
+	overflow: hidden;
+}
+#header h1 img {
+	margin-top: 10px;
+	width: 103px;
+	height: 40px;
+	display: block;
+}
+#header .parentmenu {
+	margin-left: 30px;
+	float: left;
+}
+#header .parentmenu>li {
+	float: left;
+	padding: 0 18px;
+	line-height: 60px;
+	font-size: 16px;
+	color: #fff;
+}
+#header .parentmenu>li>a {
+	color: #fff;
+}
+#header .parentmenu > li > a:hover {
+	color: #fff !important
+}
+#header span {
+    float: right;
+    font-size: 16px;
+}
+
+/* header end */
+
+/* 焦点图 */
+.jdbox {
+    width: 100%;
+    height: 360px;
+    float: left;
+    position: relative;
+    overflow: hidden;
+}
+.jdbox .jdpic {
+    width: 100%;
+    color: #000000;
+    border: none;
+    float: left;
+}
+.jdbox .jdpic ul {
+    width: 100%;
+    float: left;
+}
+.jdbox .jdpic li {
+    width: 100%;
+    float: left;
+    opacity: 0;
+    z-index: 1;
+}
+.jdbox .jdpic li img {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    margin-left: -960px;
+    width: 1920px;
+    max-width: 1920px;
+    min-width: 1000px;
+    height: 360px;
+    display: block;
+}
+/* 焦点图小按钮 */
+.jdbox .jdmenu {
+    width: 100%;
+    border: none;
+    float: right;
+    text-align: right;
+}
+.jdbox .jdmenu ul {
+    position: relative;
+    z-index: 11;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    float: left;
+}
+.jdbox .jdmenu ul li {
+    cursor: pointer;
+    margin-right: 20px;
+    width: 12px;
+    height: 12px;
+    background: #fff;
+    opacity: 1;
+    -webkit-transition: background .5s, opacity .5s;
+    -moz-transition: background .5s, opacity .5s;
+    transition: background .5s, opacity .5s;
+    z-index: 11;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    border-radius: 50%;
+    display: inline-block;
+}
+.jdbox .jdmenu .active {
+    background: #bbb;
+    opacity: 1;
+}
+/* 焦点图小按钮end */
+
+
+/* 焦点图end */
+
+/* 免费上门 */
+.col {
+    width: 100%;
+    float: left;
+}
+.services ul {
+    width: 100%;
+    float: left;
+}
+.services li {
+    width: 166px;
+    text-align: center;
+    float: left;
+}
+.services li s {
+    margin: 29px auto 7px;
+    width: 29px;
+    height: 29px;
+    background: url(../images/landing/icon.png) no-repeat;
+    display: block;
+}
+.services li.a2 s {
+    background-position: -31px 0;
+}
+.services li.a3 s {
+    background-position: -61px 0;
+}
+.services li.a4 s {
+    background-position: 0px -31px;
+}
+.services li.a5 s {
+    background-position: -31px -31px;
+}
+.services li.a6 s {
+    background-position: -61px -31px;
+}
+.services li p {
+    font-size: 16px;
+    color: #999;
+}
+/* 免费上门 end */
+
+/* numbox */
+
+.numbox {
+    padding-top: 23px;
+    width: 100%;
+    text-align: center;
+    height: 97px;
+    font-size: 16px;
+    color: #999;
+    border-bottom: #f2f3f5 solid 1px;
+    background: #fff;
+    -moz-border-radius: 5px;
+    -webkit-border-radius: 5px;
+    border-radius: 5px;
+    float: left;
+    z-index: 100;
+}
+.numbox span {
+    padding: 0 0px 0 10px;
+    height: 77px;
+    line-height: 77px;
+    letter-spacing: 10px;
+    font-size: 50px;
+    color: #f10215;
+    display: inline-block;
+}
+/* numbox end */
+
+/* 热门维修 */
+.brands_fault {
+    margin-top: 10px;
+    width: 100%;
+    background: #f6f7f9;
+}
+.brands_fault .hd {
+    padding-top: 10px;
+    width: 100%;
+    height: 67px;
+    border-bottom: #f10215 solid 1px;
+    background: #fff;
+}
+.brands_fault .hd dl {
+    width: 1000px;
+    background: #fff;
+    margin: 0 auto;
+}
+.brands_fault .hd dd {
+    position: relative;
+    width: 105px;
+    height: 100%;
+    text-align: center;
+    line-height: 65px;
+    font-size: 20px;
+    color: #333;
+    border: #fff solid 1px;
+    cursor: pointer;
+    float: left;
+}
+.brands_fault .hd dd.cur em {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    margin-left: -11px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #f10215;
+    display: block;
+}
+.brands_fault .hd dd em {
+    display: none;
+}
+.brands_fault dd span {
+    position: absolute;
+    top: -10px;
+    left: 50%;
+    margin-left: -42px;
+    width: 84px;
+    height: 18px;
+    line-height: 18px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    background: #f10215;
+    float: left;
+    cursor: default;
+    font-family: "宋体";
+}
+.brands_fault .hd dd.cur em::before {
+    content: '';
+    position: absolute;
+    bottom: -12px;
+    left: 50%;
+    margin-left: -11px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-bottom: 11px solid #f6f7f9;
+    display: block;
+}
+/* 热门维修end */
+
+.tab-cont-brand {
+    position: relative;
+    width: 100%;
+    float: left;
+}
+.tab-cont-brand .item {
+    margin-top: 30px;
+    width: 998px;
+    height: 520px;
+    background: #fff;
+    border: #ddd solid 1px;
+    float: left;
+    overflow: hidden;
+}
+.tab-cont-brand .tuijian {
+    width: 100%;
+    border: 0;
+    background: none;
+    overflow: hidden;
+}
+
+.tuijian ul {
+    width: 1010px;
+     margin-right: -10px; 
+}
+.tab-cont-brand .tuijian li {
+    position: relative;
+}
+.tuijian li {
+    position: relative;
+    margin-right: 10px;
+    margin-bottom: 10px;
+    padding: 18px;
+    width: 156px;
+    height: 125px;
+    background: #ffcdc9;
+    float: left;
+    border-radius: 5px;
+    cursor: pointer;
+}
+.tuijian ul li:nth-of-type(2n) {
+    background: #f5e9ce;
+}
+.tuijian .model {
+    padding-top: 5px;
+    font-size: 18px;
+    font-weight: bold;
+    color: #333;
+}
+.tuijian .fault {
+    padding-top: 2px;
+    height: 44px;
+    font-size: 14px;
+    line-height: 18px;
+    color: #333;
+}
+.tuijian .price {
+    font-size: 14px;
+    color: #f10215;
+}
+.tuijian .price big {
+    font-size: 24px;
+}
+.tuijian .price_market {
+    font-size: 12px;
+    color: #666;
+}
+.tuijian li span {
+    position: absolute;
+    bottom: 18px;
+    right: 18px;
+    width: 20px;
+    height: 20px;
+    background: url(../images/landing/img1.png) no-repeat;
+    display: block;
+}
+.tab-cont-brand .tuijian li i {
+    position: absolute;
+    right: -5px;
+    top: 50%;
+    margin-top: -47px;
+    width: 24px;
+    height: 94px;
+    background: url(../images/landing/img5.png) no-repeat;
+    display: block;
+}
+.tuijian li {
+	-webkit-transition: all 0.2s linear;
+	transition: all 0.2s linear;
+	-moz-transition: all 0.2s linear
+}
+.tuijian li:hover {
+	z-index: 2;
+	-webkit-box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+	-webkit-transform: translate3d(0, -2px, 0);
+}
+.brands_fault .ps {
+    width: 100%;
+    text-align: center;
+    line-height: 50px;
+    font-size: 12px;
+    color: rgb(153, 153, 153);
+    font-family: 宋体;
+}
+.brands_fault .ps font, .brand_pic .ps font {
+    padding-left: 20px;
+    color: #333;
+    font-size: 12px;
+}
+
+/* 到店维修流程 */
+.processBox {
+    width: 100%;
+    background: #f6f7f9;
+    float: left;
+}
+
+.process {
+    width: 998px;
+    height: 92px;
+    border: #ddd solid 1px;
+    float: left;
+}
+.process .selectP {
+    position: relative;
+    width: 157px;
+    line-height: 92px;
+    font-size: 18px;
+    border-right: #ddd solid 1px;
+    float: left;
+}
+.process .selectP span {
+    padding-left: 19px;
+    width: 138px;
+    line-height: 92px;
+    display: inline-block;
+    cursor: pointer;
+}
+.process .selectP s {
+    position: absolute;
+    top: 50%;
+    margin-top: -2px;
+    right: 17px;
+    width: 0;
+    height: 0;
+    border-left: 5px solid transparent;
+    border-right: 5px solid transparent;
+    border-top: 5px solid #999;
+}
+.process .selectP::before {
+    position: absolute;
+    right: -11px;
+    top: 50%;
+    margin-top: -5px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-left: 11px solid #ddd;
+    border-bottom: 11px solid transparent;
+}
+.selectP::after {
+    position: absolute;
+    right: -10px;
+    top: 50%;
+    margin-top: -5px;
+    content: '';
+    width: 0;
+    height: 0;
+    border-top: 11px solid transparent;
+    border-left: 11px solid #f6f7f9;
+    border-bottom: 11px solid transparent;
+}
+.process ul {
+    position: absolute;
+    left: 0;
+    top: 92px;
+    width: 156px;
+    border: #ddd solid 1px;
+    background: #fff;
+     display: none; 
+}
+.process li {
+    width: 100%;
+    text-align: center;
+    line-height: 42px;
+    font-size: 14px;
+    font-family: "宋体";
+    border-bottom: #f6f7f9 solid 1px;
+    cursor: pointer;
+}
+
+.process_pic ol {
+    padding-left: 24px;
+    padding-top: 27px;
+    width: 816px;
+    height: 43px;
+    float: left;
+}
+.process_pic ol li.l1 {
+    display: block;
+}
+.process_pic ol li {
+    width: 100%;
+    height: 43px;
+    text-align: left;
+    background: url(../images/landing/img2.png) no-repeat;
+    float: left;
+    display: none;
+}
+.process_pic ol li.l2 {
+    background-position: 0 -44px;
+}
+.process_pic ol li.l3 {
+    background-position: 0 -88px;
+}
+
+/* 到店维修流程end */
