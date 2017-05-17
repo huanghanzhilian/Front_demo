@@ -1,0 +1,99 @@
+/* 定义css变量 */
+@kuahnd:300px;
+
+/* 获取不同设备对应的px */
+.px2px(@name, @px){
+    @{name}: round(@px / 2) * 1px;
+    [data-dpr="2"] & {
+        @{name}: @px * 1px;
+    }
+    // for mx3
+    [data-dpr="2.5"] & {
+        @{name}: round(@px * 2.5 / 2) * 1px;
+    }
+    // for 小米note
+    [data-dpr="2.75"] & {
+        @{name}: round(@px * 2.75 / 2) * 1px;
+    }
+    [data-dpr="3"] & {
+        @{name}: round(@px / 2 * 3) * 1px
+    }
+    // for 三星note4
+    [data-dpr="4"] & {
+        @{name}: @px * 2px;
+    }
+}
+
+/* 获取rem */
+.px2rem(@name, @px){
+    @{name}: @px / 75 * 1rem;
+}
+
+
+a, blockquote, body, button, code, dd, div, dl, dt, em, fieldset, form, h1, h2, h3, h4, h5, h6, html, iframe, img, input, label, li, object, ol, p, q, small, span, strong, table, tbody, td, th, tr, ul {
+	margin: 0;
+	padding: 0;
+	border: 0
+}
+html {
+	background: #fff;
+	font-family: STHeiti, Microsoft YaHei, Helvetica, Arial, sans-serif;
+	-webkit-text-size-adjust: none;
+	word-break: break-word;
+}
+body {
+	position: relative;
+	width: 100%;
+	overflow-x: hidden;
+}
+
+body{
+    .px2px(font-size, 34);
+}
+
+
+.indexContainer.withHeader {
+	.px2px(padding-top, 160);
+}
+
+/*header*/
+#indexHeader {
+	display: block;
+	z-index: 999;
+	overflow: hidden;
+	position: fixed;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+.top_bar {
+	.px2px(height, 88);
+	position: relative;
+	background: #d43d3d;
+}
+#indexHeader .top_bar .abs_m{
+	.px2px(line-height, 88);
+	.px2px(font-size, 88);
+	width: 100%;
+    text-align: center;
+    color: #fff;
+    font-weight: 700;
+}
+
+#indexHeader .top_bar .refresh_title{
+	
+	display: inline-block;
+	background: url(//s3.pstatp.com/growth/mobile_list/image/wap_logo@3x_581de69e38eae19e1cc57449a97be10f.png) no-repeat 100%;
+	.px2px(padding-left, 30);
+	.px2px(background-size, 166);
+	.px2px(width, 166);
+	.px2px(height, 88);
+}
+
+/*header end*/
+
+
+
+
+
+

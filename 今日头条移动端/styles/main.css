@@ -1,0 +1,228 @@
+/* 定义css变量 */
+/* 获取不同设备对应的px */
+/* 获取rem */
+a,
+blockquote,
+body,
+button,
+code,
+dd,
+div,
+dl,
+dt,
+em,
+fieldset,
+form,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+html,
+iframe,
+img,
+input,
+label,
+li,
+object,
+ol,
+p,
+q,
+small,
+span,
+strong,
+table,
+tbody,
+td,
+th,
+tr,
+ul {
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+html {
+  background: #fff;
+  font-family: STHeiti, Microsoft YaHei, Helvetica, Arial, sans-serif;
+  -webkit-text-size-adjust: none;
+  word-break: break-word;
+}
+body {
+  position: relative;
+  width: 100%;
+  overflow-x: hidden;
+}
+body {
+  font-size: 17px;
+}
+[data-dpr="2"] body {
+  font-size: 34px;
+}
+[data-dpr="2.5"] body {
+  font-size: 43px;
+}
+[data-dpr="2.75"] body {
+  font-size: 47px;
+}
+[data-dpr="3"] body {
+  font-size: 51px;
+}
+[data-dpr="4"] body {
+  font-size: 68px;
+}
+.indexContainer.withHeader {
+  padding-top: 80px;
+}
+[data-dpr="2"] .indexContainer.withHeader {
+  padding-top: 160px;
+}
+[data-dpr="2.5"] .indexContainer.withHeader {
+  padding-top: 200px;
+}
+[data-dpr="2.75"] .indexContainer.withHeader {
+  padding-top: 220px;
+}
+[data-dpr="3"] .indexContainer.withHeader {
+  padding-top: 240px;
+}
+[data-dpr="4"] .indexContainer.withHeader {
+  padding-top: 320px;
+}
+/*header*/
+#indexHeader {
+  display: block;
+  z-index: 999;
+  overflow: hidden;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+}
+.top_bar {
+  height: 44px;
+  position: relative;
+  background: #d43d3d;
+}
+[data-dpr="2"] .top_bar {
+  height: 88px;
+}
+[data-dpr="2.5"] .top_bar {
+  height: 110px;
+}
+[data-dpr="2.75"] .top_bar {
+  height: 121px;
+}
+[data-dpr="3"] .top_bar {
+  height: 132px;
+}
+[data-dpr="4"] .top_bar {
+  height: 176px;
+}
+#indexHeader .top_bar .abs_m {
+  line-height: 44px;
+  font-size: 44px;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-weight: 700;
+}
+[data-dpr="2"] #indexHeader .top_bar .abs_m {
+  line-height: 88px;
+}
+[data-dpr="2.5"] #indexHeader .top_bar .abs_m {
+  line-height: 110px;
+}
+[data-dpr="2.75"] #indexHeader .top_bar .abs_m {
+  line-height: 121px;
+}
+[data-dpr="3"] #indexHeader .top_bar .abs_m {
+  line-height: 132px;
+}
+[data-dpr="4"] #indexHeader .top_bar .abs_m {
+  line-height: 176px;
+}
+[data-dpr="2"] #indexHeader .top_bar .abs_m {
+  font-size: 88px;
+}
+[data-dpr="2.5"] #indexHeader .top_bar .abs_m {
+  font-size: 110px;
+}
+[data-dpr="2.75"] #indexHeader .top_bar .abs_m {
+  font-size: 121px;
+}
+[data-dpr="3"] #indexHeader .top_bar .abs_m {
+  font-size: 132px;
+}
+[data-dpr="4"] #indexHeader .top_bar .abs_m {
+  font-size: 176px;
+}
+#indexHeader .top_bar .refresh_title {
+  display: inline-block;
+  background: url(//s3.pstatp.com/growth/mobile_list/image/wap_logo@3x_581de69e38eae19e1cc57449a97be10f.png) no-repeat 100%;
+  padding-left: 15px;
+  background-size: 83px;
+  width: 83px;
+  height: 44px;
+}
+[data-dpr="2"] #indexHeader .top_bar .refresh_title {
+  padding-left: 30px;
+}
+[data-dpr="2.5"] #indexHeader .top_bar .refresh_title {
+  padding-left: 38px;
+}
+[data-dpr="2.75"] #indexHeader .top_bar .refresh_title {
+  padding-left: 41px;
+}
+[data-dpr="3"] #indexHeader .top_bar .refresh_title {
+  padding-left: 45px;
+}
+[data-dpr="4"] #indexHeader .top_bar .refresh_title {
+  padding-left: 60px;
+}
+[data-dpr="2"] #indexHeader .top_bar .refresh_title {
+  background-size: 166px;
+}
+[data-dpr="2.5"] #indexHeader .top_bar .refresh_title {
+  background-size: 208px;
+}
+[data-dpr="2.75"] #indexHeader .top_bar .refresh_title {
+  background-size: 228px;
+}
+[data-dpr="3"] #indexHeader .top_bar .refresh_title {
+  background-size: 249px;
+}
+[data-dpr="4"] #indexHeader .top_bar .refresh_title {
+  background-size: 332px;
+}
+[data-dpr="2"] #indexHeader .top_bar .refresh_title {
+  width: 166px;
+}
+[data-dpr="2.5"] #indexHeader .top_bar .refresh_title {
+  width: 208px;
+}
+[data-dpr="2.75"] #indexHeader .top_bar .refresh_title {
+  width: 228px;
+}
+[data-dpr="3"] #indexHeader .top_bar .refresh_title {
+  width: 249px;
+}
+[data-dpr="4"] #indexHeader .top_bar .refresh_title {
+  width: 332px;
+}
+[data-dpr="2"] #indexHeader .top_bar .refresh_title {
+  height: 88px;
+}
+[data-dpr="2.5"] #indexHeader .top_bar .refresh_title {
+  height: 110px;
+}
+[data-dpr="2.75"] #indexHeader .top_bar .refresh_title {
+  height: 121px;
+}
+[data-dpr="3"] #indexHeader .top_bar .refresh_title {
+  height: 132px;
+}
+[data-dpr="4"] #indexHeader .top_bar .refresh_title {
+  height: 176px;
+}
+/*header end*/
