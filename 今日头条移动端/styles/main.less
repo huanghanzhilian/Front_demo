@@ -72,24 +72,103 @@ body{
 	background: #d43d3d;
 }
 #indexHeader .top_bar .abs_m{
-	.px2px(line-height, 88);
-	.px2px(font-size, 88);
+	
 	width: 100%;
     text-align: center;
     color: #fff;
     font-weight: 700;
+    .px2px(line-height, 88);
+	.px2px(font-size, 40);
 }
 
 #indexHeader .top_bar .refresh_title{
-	
-	display: inline-block;
 	background: url(//s3.pstatp.com/growth/mobile_list/image/wap_logo@3x_581de69e38eae19e1cc57449a97be10f.png) no-repeat 100%;
 	.px2px(padding-left, 30);
 	.px2px(background-size, 166);
 	.px2px(width, 166);
 	.px2px(height, 88);
+	display: inline-block;
 }
 
+#indexHeader .top_bar .refresh_btn{
+	background: url(//s3a.pstatp.com/growth/mobile_list/image/titlebar_refresh_small@3x_96fb31e43870246a450c5812493204bd.png) no-repeat 50%;
+	.px2px(width, 50);
+	.px2px(height, 88);
+	.px2px(background-size, 30);
+	display: inline-block;
+}
+
+#indexHeader .top_bar .abs_l, #indexHeader .top_bar .abs_r {
+    position: absolute;
+    top: 50%;
+    -webkit-transform: translateY(-50%);
+    transform: translateY(-50%);
+}
+
+#indexHeader .top_bar .abs_l {
+    .px2px(width, 108);
+    z-index: 100;
+}
+
+#indexHeader .top_bar .msg-box {
+    background: url(//s3b.pstatp.com/growth/mobile_list/image/feed_ic_message_normal@3x_f2ea949f120fda7532de30660fd47455.png) no-repeat;
+    background-size: contain;
+    .px2px(width, 64);
+    .px2px(height, 50);
+    .px2px(margin-left, 24);
+    display: block;
+    position: relative;
+}
+
+#indexHeader .top_bar .abs_r {
+    right: 0;
+    z-index: 100;
+}
+
+#indexHeader .top_bar .search {
+    display: inline-block;
+    .px2px(width, 48);
+    .px2px(height, 48);
+    background: url(//s3.pstatp.com/growth/mobile_list/image/feed_ic_search_normal@3x_0f198e566fac66cbb016bc72f15d4f39.png) no-repeat 50%;
+    background-size: contain;
+    .px2px(margin-right, 24);
+}
+
+.top_menu_bar {
+    background: #f4f5f6;
+    .px2px(height,74);
+    box-sizing: border-box;
+}
+
+.top_menu_bar .top_menu_more {
+    float: right;
+    position: relative;
+}
+
+.top_menu_bar .top_menu_more .list_shadow {
+    position: absolute;
+    .px2px(width,20);
+    .px2px(height,72);
+    .px2px(left,-20);
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAABIAAABXCAQAAACjUt0DAAAAAmJLR…AwtDMDRwAAABl0RVh0U29mdHdhcmUAQWRvYmUgSW1hZ2VSZWFkeXHJZTwAAAAASUVORK5CYII=) no-repeat 100%;
+    background-size: contain;
+    background-color: rgba(244,245,246,.3);
+}
+
+.top_menu_bar .top_menu_more .more_btn {
+    background: url(//s3.pstatp.com/growth/mobile_list/image/addred_channel_titlbar@3x_2106879383cd310a182d76e7e234db4c.png) no-repeat 50%;
+    display: block;
+    .px2px(width,80);
+    .px2px(height,72);
+    .px2px(background-size,40);
+}
+
+.top_menu_bar .top_menu_list {
+    overflow: hidden;
+    overflow-x: scroll;
+    -webkit-overflow-scrolling: touch;
+    white-space: nowrap;
+}
 /*header end*/
 
 
