@@ -169,8 +169,161 @@ body{
     -webkit-overflow-scrolling: touch;
     white-space: nowrap;
 }
+
+.top_menu_bar .top_menu_list .btn.cur {
+    color: #f85959;
+}
+
+.top_menu_bar .top_menu_list .btn {
+    white-space: nowrap;
+    display: inline-block;
+    .px2px(padding-left,20);
+    .px2px(padding-right,20);
+    color: #505050;
+    text-decoration: none;
+    .px2px(font-size,34);
+    .px2px(line-height,52);
+    .px2px(height,52);
+    .px2px(margin-left,10);
+    .px2px(margin-top,10);
+    .px2px(margin-bottom,10);
+    -webkit-tap-highlight-color: rgba(0,0,0,.3);
+}
 /*header end*/
 
+
+/* content */
+content.feed-list-container {
+    position: relative;
+    display: block;
+}
+
+content.feed-list-container .list_content {
+    -webkit-margin-after-collapse: separate;
+    -webkit-margin-before-collapse: discard;
+    -webkit-user-select: none;
+}
+
+content.feed-list-container section {
+    position: relative;
+    -webkit-transition: all 1s ease-in-out;
+    .px2px(margin-left,30);
+    .px2px(margin-right,30);
+    border-bottom: 1px solid hsla(0,0%,87%,.6);
+}
+
+content.feed-list-container .article_link {
+    display: block;
+    position: relative;
+	.px2px(padding-top,32);
+	.px2px(padding-bottom,32);
+	padding-left:0;
+	padding-right:0;
+    .px2px(min-height,84);
+    font-size: 0;
+    text-decoration: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,.1);
+    -webkit-touch-callout: none;
+}
+
+content.feed-list-container .dotdot {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    display: box;
+    -webkit-box-orient: vertical;
+}
+
+content.feed-list-container h3 {
+    color: #222;
+    .px2px(font-size,34);
+    .px2px(line-height,42);
+    font-weight: 400;
+    overflow: hidden;
+}
+
+content.feed-list-container .list_image, content.feed-list-container .list_img_holder_large {
+    .px2px(margin-top,12);
+}
+
+content.feed-list-container .list_image ul {
+    display: block;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    font-size: 0;
+    text-align: center;
+}
+
+content.feed-list-container .list_image ul li {
+    display: inline-block;
+    overflow: hidden;
+    width: 33.3%;
+    box-sizing: border-box;
+}
+content.feed-list-container .list_image ul li:first-child {
+    float: left;
+    .px2px(padding-right,4);
+}
+content.feed-list-container .list_image ul li:last-child {
+    float: right;
+    .px2px(padding-left,4);
+}
+
+content.feed-list-container .list_img_holder {
+    height: 1.96875rem;
+    position: relative;
+    background: url(//s3b.pstatp.com/growth/mobile_list/image/toutiaoicon_loading_textpage@3x_f7c130ce94874fad96bbd5aed7bf4982.png) #efefef no-repeat 50%;
+    background-size: 50%;
+}
+content.feed-list-container .list_img_holder img {
+    border: none;
+    display: block;
+    width: 100%;
+    -webkit-transition: opacity .3s ease;
+    -moz-transition: opacity ease .3s;
+    pointer-events: none;
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-user-select: none;
+    text-decoration: none;
+}
+
+content.feed-list-container .item_info {
+    color: #999;
+    overflow: hidden;
+    font-size: 0;
+    .px2px(margin-top,12);
+}
+
+content.feed-list-container .item_info span {
+    display: inline-block;
+    .px2px(font-size,20);
+    .px2px(line-height,24);
+    vertical-align: middle;
+}
+
+content.feed-list-container .item_info .space {
+    .px2px(margin-right,10);
+}
+
+
+content.feed-list-container .desc {
+    display: inline-block;
+    width: 67%;
+    vertical-align: middle;
+}
+content.feed-list-container .image-margin-right {
+    .px2px(margin-right,24);
+}
+
+content.feed-list-container .middle_mode .list_img_holder {
+    overflow: hidden;
+    width: 33%;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+/* content end */
 
 
 
