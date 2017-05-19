@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>变形与动画</title>
+<style type="text/css">
+@-webkit-keyframes move {
+	0% {
+		-webkit-transform: translateY(90px);
+	}
+	15% {
+		-webkit-transform: translate(90px, 90px);
+	}
+	30% {
+		-webkit-transform: translate(180px, 90px);
+	}
+	45% {
+		-webkit-transform: translate(90px, 90px);
+	}
+	60% {
+		-webkit-transform: translate(90px, 0);
+	}
+	75% {
+		-webkit-transform: translate(90px, 90px);
+	}
+	90% {
+		-webkit-transform: translate(90px, 180px);
+	}
+	100% {
+		-webkit-transform: translate(90px, 90px);
+	}
+}
+@-moz-keyframes move {
+	0% {
+		-moz-transform: translateY(90px);
+	}
+	15% {
+		-moz-transform: translate(90px, 90px);
+	}
+	30% {
+		-moz-transform: translate(180px, 90px);
+	}
+	45% {
+		-moz-transform: translate(90px, 90px);
+	}
+	60% {
+		-moz-transform: translate(90px, 0);
+	}
+	75% {
+		-moz-transform: translate(90px, 90px);
+	}
+	90% {
+		-moz-transform: translate(90px, 180px);
+	}
+	100% {
+		-moz-transform: translate(90px, 90px);
+	}
+}
+@-ms-keyframes move {
+	0% {
+		-ms-transform: translateY(90px);
+	}
+	15% {
+		-ms-transform: translate(90px, 90px);
+	}
+	30% {
+		-ms-transform: translate(180px, 90px);
+	}
+	45% {
+		-ms-transform: translate(90px, 90px);
+	}
+	60% {
+		-ms-transform: translate(90px, 0);
+	}
+	75% {
+		-ms-transform: translate(90px, 90px);
+	}
+	90% {
+		-ms-transform: translate(90px, 180px);
+	}
+	100% {
+		-ms-transform: translate(90px, 90px);
+	}
+}
+@-o-keyframes move {
+	0% {
+		-o-transform: translateY(90px);
+	}
+	15% {
+		-o-transform: translate(90px, 90px);
+	}
+	30% {
+		-o-transform: translate(180px, 90px);
+	}
+	45% {
+		-o-transform: translate(90px, 90px);
+	}
+	60% {
+		-o-transform: translate(90px, 0);
+	}
+	75% {
+		-o-transform: translate(90px, 90px);
+	}
+	90% {
+		-o-transform: translate(90px, 180px);
+	}
+	100% {
+		-o-transform: translate(90px, 90px);
+	}
+}
+@keyframes move {
+	0% {
+		transform: translateY(90px);
+	}
+	15% {
+		transform: translate(90px, 90px);
+	}
+	30% {
+		transform: translate(180px, 90px);
+	}
+	45% {
+		transform: translate(90px, 90px);
+	}
+	60% {
+		transform: translate(90px, 0);
+	}
+	75% {
+		transform: translate(90px, 90px);
+	}
+	90% {
+		transform: translate(90px, 180px);
+	}
+	100% {
+		transform: translate(90px, 90px);
+	}
+}
+div {
+	width: 200px;
+	height: 200px;
+	border: 1px solid red;
+	margin: 20px auto;
+}
+span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: orange;
+	-webkit-transform: translateY(90px);
+	-webkit-animation-name: move;
+	-webkit-animation-duration: 10s;
+	-webkit-animation-timing-function: ease-in;
+	-webkit-animation-delay: .2s;
+	-webkit-animation-iteration-count: infinite;
+	-webkit-animation-direction: alternate;
+	-webkit-animation-play-state: paused;
+	-moz-transform: translateY(90px);
+	-moz-animation-name: move;
+	-moz-animation-duration: 10s;
+	-moz-animation-timing-function: ease-in;
+	-moz-animation-delay: .2s;
+	-moz-animation-iteration-count: infinite;
+	-moz-animation-direction: alternate;
+	-moz-animation-play-state: paused;
+	-ms-transform: translateY(90px);
+	-ms-animation-name: move;
+	-ms-animation-duration: 10s;
+	-ms-animation-timing-function: ease-in;
+	-ms-animation-delay: .2s;
+	-ms-animation-iteration-count: infinite;
+	-ms-animation-direction: alternate;
+	-ms-animation-play-state: paused;
+	-o-transform: translateY(90px);
+	-o-animation-name: move;
+	-o-animation-duration: 10s;
+	-o-animation-timing-function: ease-in;
+	-o-animation-delay: .2s;
+	-o-animation-iteration-count: infinite;
+	-o-animation-direction: alternate;
+	-o-animation-play-state: paused;
+	transform: translateY(90px);
+	animation-name: move;
+	animation-duration: 10s;
+	animation-timing-function: ease-in;
+	animation-delay: .2s;
+	animation-iteration-count: infinite;
+	animation-direction: alternate;
+	animation-play-state: paused;
+}
+div:hover span {
+	-webkit-animation-play-state: running;
+	-moz-animation-play-state: running;
+	-ms-animation-play-state: running;
+	-o-animation-play-state: running;
+	animation-play-state: running;
+}
+</style>
+</head> 
+<body>
+
+<div><span></span></div>
+<!-- animation-play-state属性主要用来控制元素动画的播放状态。
+
+参数：
+
+其主要有两个值：running和paused。
+
+其中running是其默认值，主要作用就是类似于音乐播放器一样，可以通过paused将正在播放的动画停下来，也可以通过running将暂停的动画重新播放，这里的重新播放不一定是从元素动画的开始播放，而是从暂停的那个位置开始播放。另外如果暂停了动画的播放，元素的样式将回到最原始设置状态。
+
+例如，页面加载时，动画不播放。代码如下：
+
+animation-play-state:paused; -->
+</body>
+</html>

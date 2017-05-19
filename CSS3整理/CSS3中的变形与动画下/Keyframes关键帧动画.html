@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>变形与动画</title>
+<style type="text/css">
+@-webkit-keyframes changecolor {
+	0% {
+		background: red;
+	}
+	20% {
+		background: blue;
+	}
+	40% {
+		background: orange;
+	}
+	60% {
+		background: green;
+	}
+	80% {
+		background: yellow;
+	}
+	100% {
+		background: red;
+	}
+}
+div {
+	width: 300px;
+	height: 200px;
+	background: red;
+	color: #fff;
+	margin: 20px auto;
+}
+div:hover {
+	-webkit-animation: changecolor 5s ease-out .2s;
+}
+</style>
+</head> 
+<body>
+<div>鼠标放在我身上</div>
+<!-- 经验与技巧：在@keyframes中定义动画名称时，其中0%和100%还可以使用关键词from和to来代表，其中0%对应的是from，100%对应的是to。 -->
+</body>
+</html>

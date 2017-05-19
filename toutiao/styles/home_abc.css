@@ -3,6 +3,8 @@
 #header{
 	width: 100%;
 	background:#fff;
+    margin-bottom:16px;
+    z-index:2;
 }
 
 
@@ -128,9 +130,75 @@
 	display:block;
 	width: 110px;
 	height:28px;
-	
+	margin-bottom:16px;
+}
+.wchannel .logo img{
+    width: 100%;
+    height:100%;
+}
+
+.wchannel-item{
+    display:block;
+    width: 110px;
+    height:40px;
+    line-height:40px;
+    text-align:center;
+    color:#444;
+    border-radius:4px;
+    margin-bottom:2px;
+    -webkit-transition-property: color,background-color;
+    transition-property: color,background-color;
+}
+.wchannel-item:visited {
+    color: #444;
+}
+.wchannel-item:hover {
+    -webkit-animation-name: hvr-back-pulse;
+    animation-name: hvr-back-pulse;
+    -webkit-animation-duration: .2s;
+    animation-duration: .2s;
+    -webkit-animation-timing-function: linear;
+    animation-timing-function: linear;
+    -webkit-animation-iteration-count: 1;
+    animation-iteration-count: 1;
+    background-color: #ed4040;
+    color: #fff
+}
+
+@-webkit-keyframes hvr-back-pulse {
+    0% {
+        background-color: rgba(237,64,64,.6)
+    }
+
+    50% {
+        background-color: rgba(237,64,64,.76)
+    }
+}
+
+@keyframes hvr-back-pulse {
+    0% {
+        background-color: rgba(237,64,64,.6)
+    }
+
+    50% {
+        background-color: rgba(237,64,64,.76)
+    }
+}
+.wchannel-item.active{
+    background-color:#ed4040;
+    color:#fff;
+}
+.wchannel-item span{
+    display:inline-block;
+    font-size:16px;
 }
 /* 左侧通道end */
 
+
+/* content */
+.container .index-content {
+    width: 660px;
+}
+/* content end */
 
 /* container end */

@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Document</title>
+	<style type="text/css">
+		form {
+		  width: 300px;
+		  padding: 10px;
+		  border: 1px solid #ccc;
+		  margin: 50px auto;
+		}
+		form > div {
+		  margin-bottom: 10px;
+		}
+
+		input[type="text"]{
+		  border: 1px solid orange;
+		  padding: 5px;
+		  background: #fff;
+		  border-radius: 5px;
+		}
+
+		input[type="text"]:-moz-read-only{
+		  border-color: #000;
+		}
+		input[type="text"]:read-only{
+		  border-color: #000;
+		}
+
+		input[type="text"]:-moz-read-write{
+		  border-color: #f36;
+		}
+		input[type="text"]:read-write{
+		  border-color: #f36;
+		}
+	</style>
+</head>
+<body>
+<form action="#">
+  <div>
+    <label for="name">姓名:</label>
+    <input type="text" name="name" id="name" placeholder="大漠" />
+  </div>
+  <div>
+    <label for="address">地址:</label>
+    <input type="text" name="address" id="address" placeholder="中国上海" readonly="readonly" />
+  </div>
+</form>  
+</body>
+</html>

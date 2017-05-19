@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>变形与动画</title>
+<style type="text/css">
+.wrapper {
+	width: 200px;
+	height: 200px;
+	border: 2px dashed red;
+	margin: 100px auto;
+}
+.wrapper div {
+	width: 200px;
+	height: 200px;
+	line-height: 200px;
+	background: orange;
+	text-align: center;
+	color: #fff;
+	-webkit-transition: 2s;
+	-moz-transition: 2s;
+	transition: 2s;
+}
+.wrapper div:hover {
+	opacity: .5;
+	-webkit-transform: scale(0.8,1);
+	-moz-transform: scale(0.8,1);
+	transform: scale(0.8,1);
+}
+</style>
+</head> 
+<body>
+<div class="wrapper">
+  <div>我将缩小0.8</div>
+</div>
+<!-- 1、 scale(X,Y)使元素水平方向和垂直方向同时缩放（也就是X轴和Y轴同时缩放） -->
+</body>
+</html>

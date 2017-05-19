@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>变形与动画</title>
+<style type="text/css">
+.wrapper {
+	width: 400px;
+	height: 200px;
+	margin: 20px auto;
+	border: 2px dotted red;
+	position: relative;
+}
+.wrapper div {
+	padding: 15px 20px;
+	color: #fff;
+	background-color: orange;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	-webkit-transform: translate(-50%, -50%);
+	transform: translate(-50%, -50%);
+	-webkit-transition: all .5s ease-in 1s;
+	transition: all .5s ease-in 1s;
+}
+.wrapper div:hover {
+	background-color: red;
+	border-radius: 10px;
+}
+</style>
+</head> 
+<body>
+<div class="wrapper">
+  <div>鼠标放到我的身上来</div>
+</div>
+
+<!-- transition-delay属性和transition-duration属性极其类似，不同的是transition-duration是用来设置过渡动画的持续时间，而transition-delay主要用来指定一个动画开始执行的时间，也就是说当改变元素属性值后多长时间开始执行。
+
+有时我们想改变两个或者多个css属性的transition效果时，只要把几个transition的声明串在一起，用逗号（“，”）隔开，然后各自可以有各自不同的延续时间和其时间的速率变换方式。但需要值得注意的一点：第一个时间的值为 transition-duration，第二个为transition-delay。
+
+例如：a{ transition: background 0.8s ease-in 0.3,color 0.6s ease-out 0.3;} -->
+</body>
+</html>

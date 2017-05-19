@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>变形与动画</title>
+<style type="text/css">
+.wrapper {
+	width: 300px;
+	height: 100px;
+	border: 2px dotted red;
+	margin: 30px auto;
+}
+.wrapper div {
+	width: 300px;
+	height: 100px;
+	line-height: 100px;
+	text-align: center;
+	color: #fff;
+	background: orange;
+	-webkit-transform: skew(45deg);
+	-moz-transform: skew(45deg);
+	transform: skew(45deg);
+}
+.wrapper span {
+	display: block;
+	-webkit-transform: ？
+	-moz-transform:？
+	transform:？
+}
+</style>
+</head> 
+<body>
+<div class="wrapper">
+  <div><span>我不想被扭曲(^_^)</span></div>
+</div>
+<!-- 扭曲skew()函数能够让元素倾斜显示。它可以将一个对象以其中心位置围绕着X轴和Y轴按照一定的角度倾斜。这与rotate()函数的旋转不同，rotate()函数只是旋转，而不会改变元素的形状。skew()函数不会旋转，而只会改变元素的形状。 -->
+</body>
+</html>

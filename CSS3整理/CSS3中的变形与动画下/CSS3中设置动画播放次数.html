@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head> 
+<meta charset="utf-8">
+<title>变形与动画</title>
+<style type="text/css">
+@keyframes move {
+	0% {
+		transform: translate(0);
+	}
+	15% {
+		transform: translate(100px, 180px);
+	}
+	30% {
+		transform: translate(150px, 0);
+	}
+	45% {
+		transform: translate(250px, 180px);
+	}
+	60% {
+		transform: translate(300px, 0);
+	}
+	75% {
+		transform: translate(450px, 180px);
+	}
+	100% {
+		transfrom: translate(480px, 0);
+	}
+}
+div {
+	width: 500px;
+	height: 200px;
+	border: 1px solid red;
+	margin: 20px auto;
+}
+div span {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background: green;
+	border-radius: 100%;
+	animation-name: move;
+	animation-duration: 10s;
+	animation-timing-function: ease;
+	animation-delay: .1s;
+	animation-iteration-count: infinite;
+}
+</style>
+</head> 
+<body>
+<div><span></span></div>
+<!-- animation-iteration-count属性主要用来定义动画的播放次数。
+
+语法规则：
+
+animation-iteration-count: infinite | <number> [, infinite | <number>]*
+1、其值通常为整数，但也可以使用带有小数的数字，其默认值为1，这意味着动画将从开始到结束只播放一次。
+
+2、如果取值为infinite，动画将会无限次的播放。 -->
+</body>
+</html>

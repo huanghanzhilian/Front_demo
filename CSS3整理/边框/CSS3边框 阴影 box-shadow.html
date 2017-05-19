@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>boxshadow</title>
+<style>
+.boxshadow-outset{
+    width:100px;
+	height:100px;
+    box-shadow:4px 2px 6px red, -4px -2px 6px red, 0px 0px 12px 5px #000 inset;
+}
+.boxshadow-inset{
+    width:100px;
+    height:100px;
+    box-shadow:4px 4px 6px #666 inset; 
+}
+.boxshadow-multi{
+    width:100px;
+    height:100px;
+    box-shadow:4px 2px 6px #f00, -4px -2px 6px #000, 0px 0px 12px 5px #33CC00 inset;
+}
+
+</style>
+</head>
+
+<body>
+<!-- box-shadow是向盒子添加阴影。支持添加一个或者多个.语法：box-shadow: X轴偏移量 Y轴偏移量 [阴影模糊半径] [阴影扩展半径] [阴影颜色] [投影方式];其中偏移量是必须要有的额，其他的可省略。最后的投影方式省略为外阴影，不省略只能在最后或者参数的第一个写上inset内阴影。
+在进行多个阴影的时候，偏移量尽量不要重合，这样颜色浅的就会被遮盖上 -->
+<h2>外阴影</h2>
+<div class="boxshadow-outset">
+</div>
+<br />
+<h2>内阴影</h2>
+<div class="boxshadow-inset">
+</div>
+<br />
+<h2>多阴影</h2>
+<div class="boxshadow-multi">
+</div>
+</body>CSS3边框  
+</html>
