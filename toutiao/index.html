@@ -5,6 +5,12 @@
 	<meta name="viewport" content="width=device-width,initial-scale=1.0, maximum-scale=1.0,user-scalable=no">
 	<title>Document</title>
 	<link rel="stylesheet" type="text/css" href="./styles/main.css">
+	<script>
+		//在移动端的页面在上面对加载页面的设备进行判断，如果不为移动设备，则跳转加载pc端样式
+        if(!(/(android|iphone|ipad|PlayBook|BB10)/i).test(window.navigator.userAgent)){
+            window.location.href = 'http://www.huanghanlian.com/Front_demo/toutiao/index1.html';
+        }
+    </script>
 </head>
 <body>
 	<div class="main">
