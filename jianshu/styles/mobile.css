@@ -73,4 +73,64 @@ a {
 	border-radius:4px;
 }
 
-/* container */
+/* container end */
+
+/* 下载指导 */
+.index .img-phone {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 178px;
+}
+
+.index .download-guide {
+    margin: 0;
+    padding: 10px 0;
+}
+
+.index .download-guide ul {
+    -webkit-margin-before: .5em;
+    -webkit-margin-after: .5em;
+    margin-left: 20px;
+}
+.index .download-guide li {
+    position: relative;
+    padding: 4px 0;
+    width: 100%;
+    font-size: 14px;
+    color: #4a4a4a;
+    word-wrap: break-word;
+}
+
+/* 下载指导end */
+
+/* 标题 */
+.top-title {
+    margin: 0 -18px;
+    padding: 10px 18px;
+    font-size: 14px;
+    font-weight: 700;
+    color: #545454
+}
+
+.split-line,.top-title {
+    background-color: #f5f5f5
+}
+
+/* 标题 */
+
+
+.index .recommend-collection {
+    padding: 15px 0 5px;
+    font-size: 0
+}
+
+.index .recommend-collection .collection {
+    display: inline-block;
+    padding: 2px 8px;
+    margin: 0 12px 12px 0;
+    border: 1px solid #ea6f5a;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #ea6f5a;
+}
