@@ -134,3 +134,302 @@ a {
     font-size: 14px;
     color: #ea6f5a;
 }
+
+.note-list ul {
+    list-style: none;
+}
+
+.note-list li {
+    position: relative;
+    width: 100%;
+    border-bottom: 1px solid #f0f0f0;
+    word-wrap: break-word;
+}
+.note-list .have-img .wrap-img {
+    position: absolute;
+    top: 50%;
+    margin-top: -40px;
+    right: 3px;
+    width: 80px;
+    height: 80px;
+}
+.note-list .have-img .wrap-img img {
+    width: 100%;
+    height: 100%;
+    border-radius: 4px;
+    border: 1px solid #f0f0f0;
+}
+
+.note-list .have-img>div {
+    padding-right: 95px;
+}
+
+.note-list .content {
+    padding: 20px 0 25px;
+}
+
+.content {
+    color: #2f2f2f;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 1.7;
+}
+
+.note-list .content a {
+    text-decoration: none;
+}
+
+
+.content a {
+    color: #3194d0;
+}
+
+.container a {
+    color: #3194d0;
+    text-decoration: none;
+}
+
+.note-list .content .author {
+    font-size: 13px;
+}
+
+.note-list .content .author .avatar {
+    position: absolute;
+    margin: 4px 2px 0 0;
+}
+
+.note-list .content .author a {
+    color: #333;
+}
+
+.note-list .avatar img {
+    width: 20px;
+    height: 20px;
+    border: 1px solid #f0f0f0;
+}
+
+.content img {
+    max-width: 100%;
+}
+.note-list .content .author .avatar {
+    position: absolute;
+    margin: 4px 2px 0 0;
+}
+.avatar img {
+    width: 34px;
+    height: 34px;
+    border-radius: 100px;
+    border: 1px solid #ddd;
+}
+
+.note-list .content .author .name {
+    display: inline-block;
+    padding: 6px 2px 6px 28px;
+    line-height: 1.5;
+}
+
+.note-list .content .author .time {
+    color: #969696;
+}
+
+.note-list .content .title {
+    display: inherit;
+    font-size: 17px;
+    line-height: 1.5;
+    color: #333;
+}
+
+.title {
+    margin: 15px 0;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: -apple-system,SF UI Display,Arial,PingFang SC,Hiragino Sans GB,Microsoft YaHei,WenQuanYi Micro Hei,sans-serif;
+    color: #2f2f2f;
+    word-break: break-word;
+    line-height: 1.4;
+}
+
+.note-list .meta {
+    padding-top: 3px;
+    padding-right: 0!important;
+    font-size: 12px;
+    font-weight: 400;
+    line-height: 20px;
+    color: #b1b1b1;
+}
+
+.note-list .meta i {
+    margin-right: 1px;
+}
+
+.iconfont {
+    font-family: iconfont!important;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+@font-face {
+    font-family: iconfont;
+    src: url(http://cdn2.jianshu.io/assets/fonts/mobile/iconfont-63a48fc74cd3615847bc803dbbb6fce7.eot);
+    src: url(http://cdn2.jianshu.io/assets/fonts/mobile/iconfont-63a48fc74cd3615847bc803dbbb6fce7.eot) format("embedded-opentype"),url(//cdn2.jianshu.io/assets/fonts/mobile/iconfont-d522e18a20171a11be6cca74fd2178d8.woff) format("woff"),url(//cdn2.jianshu.io/assets/fonts/mobile/iconfont-006067f0126311d934b67d7d52e9e207.ttf) format("truetype"),url(//cdn2.jianshu.io/assets/fonts/mobile/iconfont-5c83e0be8ecb68b2f731bb10c5f56111.svg) format("svg")
+}
+
+.iconfont {
+    font-family: iconfont!important;
+    font-size: inherit;
+    font-style: normal;
+    font-weight: 400!important;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale
+}
+
+.ic-qq_connect:before {
+    content: "\E603"
+}
+
+.ic-douban:before {
+    content: "\E601"
+}
+
+.ic-close:before {
+    content: "\E631"
+}
+
+.ic-google_oauth2:before {
+    content: "\E600"
+}
+
+.ic-wechat:before {
+    content: "\E604"
+}
+
+.ic-weibo:before {
+    content: "\E605"
+}
+
+.ic-user:before {
+    content: "\E65E"
+}
+
+.ic-list-comments:before {
+    content: "\E661"
+}
+
+.ic-list-like:before {
+    content: "\E662"
+}
+
+.ic-list-read:before {
+    content: "\E664"
+}
+
+.ic-list-money:before {
+    content: "\E60F"
+}
+
+.ic-followed:before {
+    content: "\E610"
+}
+
+.ic-follow:before {
+    content: "\E611"
+}
+
+.ic-friends:before {
+    content: "\E617"
+}
+
+.ic-woman:before {
+    content: "\E645"
+}
+
+.ic-man:before {
+    content: "\E646"
+}
+
+.ic-password:before {
+    content: "\E614"
+}
+
+.ic-ios:before {
+    content: "\E612"
+}
+
+.ic-error:before {
+    content: "\E648"
+}
+
+.ic-android:before {
+    content: "\E65F"
+}
+
+.ic-verify:before {
+    content: "\E61F"
+}
+
+.ic-show:before {
+    content: "\E621"
+}
+
+.ic-hide:before {
+    content: "\E622"
+}
+
+.ic-link:before {
+    content: "\E616"
+}
+
+.ic-more:before {
+    content: "\E620"
+}
+
+.ic-appdownload:before {
+    content: "\E69D"
+}
+
+.ic-openinapp:before {
+    content: "\E6A5"
+}
+
+.ic-back:before {
+    content: "\E6A6"
+}
+
+.ic-write:before {
+    content: "\E6AA"
+}
+
+.ic-yidongduanAppxiazai:before {
+    content: "\E6B5"
+}
+
+.ic-zan-active:before {
+    content: "\E6BD"
+}
+
+.ic-comment:before {
+    content: "\E6BE"
+}
+
+.ic-zan:before {
+    content: "\E6BF"
+}
+
+.ic-like-active:before {
+    content: "\E6C7"
+}
+
+.ic-like:before {
+    content: "\E6CA"
+}
+
+.ic-comment-close:before {
+    content: "\E6CB"
+}
+
+.ic-bottombar-comment:before {
+    content: "\E6CC"
+}

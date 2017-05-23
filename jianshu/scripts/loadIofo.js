@@ -1,10 +1,4 @@
 
-
-
-/**
- * jquery.accordion.js 1.0
- * http://jquerywidget.com
- */
 ;
 (function(factory) {
     if (typeof define === "function" && (define.amd || define.cmd) && !jQuery) {
@@ -47,13 +41,80 @@
             //对象定义
             var $this = $(this);
             $.ajax({
-                url: './data/data.json',
+                url: 'http://www.huanghanlian.com/Front_demo/jianshu/data/data.json',
                 type: 'GET',
                 crossDomain: true,
                 dataType: 'json',
                 jsonpCallback: 'jsonp_location',
                 success: function(data) {
-                    console.log(data)
+                    var state=true;
+                    var updateData = function(){
+                        if(state){
+                            var Html='<div class="top-title">热门文章</div><ul>';
+                            for (var i = 0; i < data.length; i++) {
+                                if(data[i].list_image_url){
+                                    Html+='<li class="have-img">\
+                                        <a class="wrap-img" href="http://www.jianshu.com/p/'+data[i].slug+'">\
+                                            <img src="'+data[i].list_image_url+'">\
+                                        </a>\
+                                        <div class="content">\
+                                            <a href="http://www.jianshu.com/p/'+data[i].slug+'">\
+                                                <div class="author">\
+                                                    <a class="avatar" href="http://www.jianshu.com/p/'+data[i].slug+'">\
+                                                        <img src="'+data[i].user.avatar+'">\
+                                                    </a>\
+                                                    <div class="name">\
+                                                        <a href="http://www.jianshu.com/p/'+data[i].slug+'">'+data[i].user.nickname+'</a>\
+                                                    </div>\
+                                                    <span class="time">32 分钟前</span>\
+                                                </div>\
+                                                <div class="title">'+data[i].title+'</div>\
+                                                <div class="meta">\
+                                                    <i class="iconfont ic-list-read"></i>\
+                                                    <span>'+data[i].views_count+'</span>\
+                                                    <i class="iconfont ic-list-comments"></i>\
+                                                    <span>'+data[i].public_comments_count+'</span>\
+                                                    <i class="iconfont ic-list-like"></i>\
+                                                    <span>'+data[i].likes_count+'</span>\
+                                                </div>\
+                                            </a>\
+                                        </div>\
+                                    </li>';
+                                }else{
+                                    Html+='<li>\
+                                        <div class="content">\
+                                            <a href="http://www.jianshu.com/p/'+data[i].slug+'">\
+                                                <div class="author">\
+                                                    <a class="avatar" href="http://www.jianshu.com/p/'+data[i].slug+'">\
+                                                        <img src="'+data[i].user.avatar+'">\
+                                                    </a>\
+                                                    <div class="name">\
+                                                        <a href="http://www.jianshu.com/p/'+data[i].slug+'">'+data[i].user.nickname+'</a>\
+                                                    </div>\
+                                                    <span class="time">32 分钟前</span>\
+                                                </div>\
+                                                <div class="title">'+data[i].title+'</div>\
+                                                <div class="meta">\
+                                                    <i class="iconfont ic-list-read"></i>\
+                                                    <span>'+data[i].views_count+'</span>\
+                                                    <i class="iconfont ic-list-comments"></i>\
+                                                    <span>'+data[i].public_comments_count+'</span>\
+                                                    <i class="iconfont ic-list-like"></i>\
+                                                    <span>'+data[i].likes_count+'</span>\
+                                                </div>\
+                                            </a>\
+                                        </div>\
+                                    </li>';
+                                }
+                            }
+                            Html+='</ul>';
+                            $this.html(Html);
+                        }
+                    }
+
+                    //初始化
+                    updateData();
+                    //format.province();
                 }
             });
         });
