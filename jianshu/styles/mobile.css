@@ -1,0 +1,76 @@
+
+html {
+    -ms-text-size-adjust: 100%;
+    -webkit-text-size-adjust: 100%
+}
+
+body {
+    line-height: 1.6;
+    font-family: -apple-system-font,Helvetica Neue,sans-serif
+}
+
+* {
+    margin: 0;
+    padding: 0
+}
+
+a img {
+    border: 0
+}
+
+a {
+    text-decoration: none;
+    -webkit-tap-highlight-color: transparent
+}
+
+
+
+/* container */
+.container{
+	padding:52px 18px 0;
+}
+.top{
+	position:fixed;
+	top:0;
+	left: 0;
+	right: 0;
+	z-index:10;
+	padding:3px 18px;
+	font-size:0;
+	background-color:#fff;
+	box-shadow:0 2px 4px rgba(0,0,0,.1);
+}
+.top .logo{
+	height:42px;
+	display:inline-block;
+	vertical-align: middle;
+}
+.top .logo img{
+	height: 100%;
+}
+
+.top .slogan{
+	margin: 0 0 0 12px;
+	font-size:12px;
+	color:#333;
+	vertical-align: middle;
+	display:inline-block;
+}
+.top .slogan .slogan-title{
+	font-size:15px;
+	color:#333;
+	line-height:20px;
+}
+.top .app-download{
+	position:absolute;
+	top: 9px;
+	right:15px;
+	padding:4px 11px;
+	font-size:14px;
+	font-weight:700;
+	color:#fff;
+	background-color:#ea6f5a;
+	border-radius:4px;
+}
+
+/* container */
