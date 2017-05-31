@@ -274,7 +274,7 @@ a {
 @font-face {
     font-family: iconfont;
     src: url(http://cdn2.jianshu.io/assets/fonts/mobile/iconfont-63a48fc74cd3615847bc803dbbb6fce7.eot);
-    src: url(http://cdn2.jianshu.io/assets/fonts/mobile/iconfont-63a48fc74cd3615847bc803dbbb6fce7.eot) format("embedded-opentype"),url(//cdn2.jianshu.io/assets/fonts/mobile/iconfont-d522e18a20171a11be6cca74fd2178d8.woff) format("woff"),url(//cdn2.jianshu.io/assets/fonts/mobile/iconfont-006067f0126311d934b67d7d52e9e207.ttf) format("truetype"),url(//cdn2.jianshu.io/assets/fonts/mobile/iconfont-5c83e0be8ecb68b2f731bb10c5f56111.svg) format("svg")
+    src: url(http://cdn2.jianshu.io/assets/fonts/mobile/iconfont-63a48fc74cd3615847bc803dbbb6fce7.eot) format("embedded-opentype"),url(http://cdn2.jianshu.io/assets/fonts/mobile/iconfont-d522e18a20171a11be6cca74fd2178d8.woff) format("woff"),url(http://cdn2.jianshu.io/assets/fonts/mobile/iconfont-006067f0126311d934b67d7d52e9e207.ttf) format("truetype"),url(http://cdn2.jianshu.io/assets/fonts/mobile/iconfont-5c83e0be8ecb68b2f731bb10c5f56111.svg) format("svg")
 }
 
 .iconfont {
