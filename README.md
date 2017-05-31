@@ -24,4 +24,4 @@
 
 ### 小丸子和爷爷
 简介：CSS布局思想
-[演示](http://www.huanghanlian.com/Front_demo/css3_Chi-biMaruko/)
+[演示](http://www.huanghanlian.com/Front_demo/css3_ChibiMaruko/)
